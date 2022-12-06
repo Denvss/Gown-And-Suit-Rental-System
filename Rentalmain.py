@@ -19,12 +19,10 @@ while True:
 
     choice = input("Choose Yours :) : ")
    
-<<<<<<< HEAD
 print("testing")
 print ("testing")
 
 print("pogi")
-=======
 print ("eronz")
 
->>>>>>> 41f7578c3e293eb063fcbda48f1f0617d7448ddb
+print("pasado sa python")
