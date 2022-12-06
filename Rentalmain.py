@@ -1,4 +1,4 @@
-from rent import Gown_Rent, Suit_Rent, Customer
+from Rent import Gown_Rent, Suit_Rent, Customer
 
 gown = Gown_Rent(100)
 suit = Suit_Rent(100)
