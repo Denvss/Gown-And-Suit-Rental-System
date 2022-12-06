@@ -101,3 +101,51 @@ class OutfitRent:
         else:
             print("You do not rent an Outfit!")
             return None
+        
+class Suit_Rent(OutfitRent):
+    
+    global discountRate
+    discountRate = 15  
+    
+    def __init__(self, stock):
+        super().__init__(stock)
+    
+    def discount(self, b):
+        bill = b - (b * discountRate) / 100
+        return bill
+
+class Gown_Rent(OutfitRent):
+    
+    def __init__(self, stock):
+        super().__init__(stock)
+
+
+class Customer:
+    
+    def __init__(self):
+        self.gowns = 0
+        self.rentalBasisG = 0
+        self.rentalTimeG = 0
+        self.suits = 0
+        self.rentalBasisS = 0
+        self.rentalTimeS = 0
+        
+    
+    def rentOutfit(self, outfit):
+        if outfit == "gown":
+            gowns = input("How many suit(s) would you rent: ")
+            
+            try:
+                gowns = int(gowns)
+            except ValueError:
+                print("Input must be a number!")
+                return -1
+            
+            if gowns < 1:
+                print("Number of suit should be greater than zero!")
+                return -1
+            else:
+                self.gowns = gowns
+            return self.gowns
+        elif outfit == "suit":
+            suits = input("How many suit(s) would you rent: ")
