@@ -61,6 +61,26 @@ class OutfitRent:
                 print("Thank you for returning your suit!")
                 print("Price: ₱{}".format(bill))
                 
+       rentalTime, rentalBasis, numOfOutfit = request
+        bill = 0
+        
+        if outfit == "suit":
+            if rentalTime and rentalBasis and numOfOutfit:
+                self.stock += numOfOutfit
+                now = datetime.datetime.now()
+                
+                if rentalBasis == 1: # daily
+                    bill = suitDPrice * numOfOutfit
+                elif rentalBasis == 2: #♠ weekly
+                    bill = suitWPrice * numOfOutfit
+                
+                if numOfOutfit >= 3:
+                    print("You have an extra 20% discount!")
+                    bill *= 0.8
+                    
+                print("Thank you for returning your suit!")
+                print("Price: ₱{}".format(bill))
+                
         elif outfit == "gown":
             if rentalTime and rentalBasis and numOfOutfit:
                 self.stock += numOfOutfit
