@@ -54,3 +54,46 @@ while True:
                 break
             else:
                 print("Invalid Input! Please enter a number between 1 - 6")
+        elif choice == "B" or choice == "b":
+                print("""
+                    ||||| Suit Menu |||||
+                    1. Display Available Suits
+                    2. Rent a Suit for a Day (₱700)
+                    3. Rent a Suit for a Week (₱4200)
+                    4. Return a Suit
+                    5. Main Menu
+                    6. Exit
+                    
+                    """)
+                sSelect = int(input("Choose Yours 🙂 : "))
+                
+                if sSelect == 1:
+                    suit.displayStock()
+                elif sSelect == 2:
+                    customer.rentalTimeS = suit.rentDay(customer.rentOutfit("suit"))
+                    customer.rentalBasisS = 1
+                    print("------------------------------------")
+                elif sSelect == 3:
+                    customer.rentalTimeS = suit.rentWeek(customer.rentOutfit("suit"))
+                    customer.rentalBasisS = 2
+                    print("------------------------------------")
+                elif sSelect == 4:
+                    customer.bill = suit.returnOutfit(customer.returnOutfit("suit"), "suit")
+                    customer.rentalBasisS, customer.rentalTimeS, customer.suits = 0, 0, 0
+                    print("------------------------------------")
+                elif sSelect == 5:
+                    print("------------------------------------")
+                elif sSelect == 6:
+                    break
+                else:
+                    print("Invalid Input! Please enter a number between 1 - 6")
+            
+        elif choice == "E" or choice == "e":
+            print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice dayyyy!")
+            break
+        else:
+            print("Invalid Input! Please enter A, B or E!")
+
+    except ValueError:
+        print("Value Inputted is not a number!")
+        continue
