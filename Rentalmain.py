@@ -20,3 +20,4 @@ while True:
     choice = input("Choose Yours :) : ")
    
 print("testing")
+print ("testing")
