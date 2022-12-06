@@ -149,3 +149,30 @@ class Customer:
             return self.gowns
         elif outfit == "suit":
             suits = input("How many suit(s) would you rent: ")
+            
+            try:
+                    suits = int(suits)
+                except ValueError:
+                    print("Input must be a number!")
+                    return -1
+
+                if suits < 1:
+                    print("Number of suit should be greater than zero!")
+                    return -1
+                else:
+                    self.suits = suits
+                return self.suits
+            else:
+                print("Request Outfit error!")
+
+        def returnOutfit(self, outfit):
+            if outfit == "gown":
+                if self.rentalTimeG and self.rentalBasisG and self.gowns:
+                    return self.rentalTimeG, self.rentalBasisG, self.gowns
+                else:
+                    return 0,0,0
+            elif outfit == "suit":
+                if self.rentalTimeS and self.rentalBasisS and self.suits:
+                    return self.rentalTimeS, self.rentalBasisS, self.suits
+            else:
+                print("Return Outfit error!")
