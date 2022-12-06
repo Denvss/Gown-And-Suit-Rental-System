@@ -27,3 +27,4 @@ print ("eronz")
 
 print("pasado sa python")
 print ("makakatapos sa project")
+print("makakatapos den tayo")
