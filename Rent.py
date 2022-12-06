@@ -147,6 +147,7 @@ class Customer:
             else:
                 self.gowns = gowns
             return self.gowns
+        
         elif outfit == "suit":
             suits = input("How many suit(s) would you rent: ")
             
