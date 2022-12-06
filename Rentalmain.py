@@ -26,3 +26,4 @@ print("pogi")
 print ("eronz")
 
 print("pasado sa python")
+print ("makakatapos sa project")
