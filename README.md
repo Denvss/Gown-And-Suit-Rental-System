@@ -16,7 +16,11 @@ The purpose of this system is to make it simpler not only for the owner but also
 Features:
 
  Gown and Suit Menu
+ 
  Display all the available outfits (stocks).
+ 
  Rent for a day or for a week.
+ 
  Return the rented outfit with the amount to pay included.
+ 
  Provide 20% discount for every 3 or more outfits rented.
