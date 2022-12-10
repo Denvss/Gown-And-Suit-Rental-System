@@ -128,7 +128,7 @@ class Customer:
         
     def rentOutfit(self, outfit):
         if outfit == "gown":
-            gowns = input("How many suit(s) would you rent: ")
+            gowns = input("How many gown(s) would you rent: ")
             
             try:
                 gowns = int(gowns)
@@ -137,7 +137,7 @@ class Customer:
                 return -1
             
             if gowns < 1:
-                print("Number of suit should be greater than zero!")
+                print("Number of gown should be greater than zero!")
                 return -1
             else:
                 self.gowns = gowns
