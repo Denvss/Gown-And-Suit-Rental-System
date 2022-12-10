@@ -1,6 +1,6 @@
 from Packages import Rent
 from Packages import CustomerManage
-from Packages.Rent import Gown_Rent, Suit_Rent, Customer
+from Packages.Rent import Customer
 
 customer = Customer()
 
@@ -23,7 +23,7 @@ def customerOperation():
 def customerManage():
     customerOperation()
     op = input("Enter your choice: ")
-    
+
     if op == "A" or op == "a":
         CustomerManage.createAccount()
     elif op == "B" or op == "b":
