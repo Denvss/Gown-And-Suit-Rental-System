@@ -1,0 +1,2 @@
+Customer ID               Firstname                 Lastname                      
+12345                     John                      Pogi         
