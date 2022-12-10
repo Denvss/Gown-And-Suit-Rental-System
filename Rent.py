@@ -40,30 +40,10 @@ class OutfitRent:
         gownWPrice = gownDPrice * 6
         suitDPrice = 700
         suitWPrice = suitDPrice * 6
-
+        
         rentalTime, rentalBasis, numOfOutfit = request
         bill = 0
         
-        if outfit == "suit":
-                if rentalTime and rentalBasis and numOfOutfit:
-                    self.stock += numOfOutfit
-                    now = datetime.datetime.now()
-                    
-                    if rentalBasis == 1: # daily
-                        bill = suitDPrice * numOfOutfit
-                    elif rentalBasis == 2: #♠ weekly
-                        bill = suitWPrice * numOfOutfit
-                    
-                    if numOfOutfit >= 3:
-                        print("You have an extra 20% discount!")
-                        bill *= 0.8
-                        
-                    print("Thank you for returning your suit!")
-                    print("Price: ₱{}".format(bill))
-                    
-        rentalTime, rentalBasis, numOfOutfit = request
-        bill = 0
-            
         if outfit == "suit":
             if rentalTime and rentalBasis and numOfOutfit:
                 self.stock += numOfOutfit
@@ -101,23 +81,26 @@ class OutfitRent:
         else:
             print("You do not rent an Outfit!")
             return None
-        
+
 class Suit_Rent(OutfitRent):
-        global discountRate
-        discountRate = 15  
-
-        def __init__(self, stock):
-            super().__init__(stock)
-
-        def discount(self, b):
-            bill = b - (b * discountRate) / 100
-            return bill
+    
+    global discountRate
+    discountRate = 15  
+    
+    def __init__(self, stock):
+        super().__init__(stock)
+    
+    def discount(self, b):
+        bill = b - (b * discountRate) / 100
+        return bill
 
 class Gown_Rent(OutfitRent):
+    
     def __init__(self, stock):
         super().__init__(stock)
 
 class Customer:
+    
     def __init__(self):
         self.gowns = 0
         self.rentalBasisG = 0
@@ -142,33 +125,33 @@ class Customer:
             else:
                 self.gowns = gowns
             return self.gowns
-        
+            
         elif outfit == "suit":
             suits = input("How many suit(s) would you rent: ")
             
             try:
-                    suits = int(suits)
+                suits = int(suits)
             except ValueError:
-                    print("Input must be a number!")
-                    return -1
-
+                print("Input must be a number!")
+                return -1
+            
             if suits < 1:
-                    print("Number of suit should be greater than zero!")
-                    return -1
+                print("Number of suit should be greater than zero!")
+                return -1
             else:
                 self.suits = suits
-                return self.suits
+            return self.suits
         else:
             print("Request Outfit error!")
-
+    
     def returnOutfit(self, outfit):
-            if outfit == "gown":
-                if self.rentalTimeG and self.rentalBasisG and self.gowns:
-                    return self.rentalTimeG, self.rentalBasisG, self.gowns
-                else:
-                    return 0,0,0
-            elif outfit == "suit":
-                if self.rentalTimeS and self.rentalBasisS and self.suits:
-                    return self.rentalTimeS, self.rentalBasisS, self.suits
+        if outfit == "gown":
+            if self.rentalTimeG and self.rentalBasisG and self.gowns:
+                return self.rentalTimeG, self.rentalBasisG, self.gowns
             else:
-                print("Return Outfit error!")
+                return 0,0,0
+        elif outfit == "suit":
+            if self.rentalTimeS and self.rentalBasisS and self.suits:
+                return self.rentalTimeS, self.rentalBasisS, self.suits
+        else:
+            print("Return Outfit error!")

@@ -65,7 +65,7 @@ while True:
                     6. Exit
                     
                     """)
-                sSelect = int(input("Choose Yours 🙂 : "))
+                sSelect = int(input("Choose Yours :) : "))
                 
                 if sSelect == 1:
                     suit.displayStock()
@@ -82,7 +82,7 @@ while True:
                     customer.rentalBasisS, customer.rentalTimeS, customer.suits = 0, 0, 0
                     print("------------------------------------")
                 elif sSelect == 5:
-                    print("------------------------------------")
+                    print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
                 elif sSelect == 6:
                     break
                 else:
