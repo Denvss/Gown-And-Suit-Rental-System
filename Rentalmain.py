@@ -138,5 +138,6 @@ while (cond != "E" and cond != "e"):
         rental()
     elif ch == "E" or ch == "e":
         print("\nThank You Very Much!")
+        break
     else:
         print("\nInvalid Input")
