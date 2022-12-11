@@ -53,7 +53,7 @@ def rental():
                     5. Main Menu
                     6. Exit
                     """)
-                gSelect = int(input("Choose Yours:) : "))
+                gSelect = int(input("Choose Yours :) : "))
 
                 if gSelect == 1:
                     Rent.Gown_Rent(100).displayStock()
@@ -75,6 +75,7 @@ def rental():
                     print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
 
                     break
+
                 else:
                      print("Invalid Input! Please enter a number between 1 - 6")
              
@@ -106,17 +107,21 @@ def rental():
                         customer.rentalBasisS, customer.rentalTimeS, customer.suits = 0, 0, 0
                         print("------------------------------------")
                     elif sSelect == 5:
-                        print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
+                        print("||||| Welcome to JRRK Wardrove Rental Shop System |||||")
+                        exit()
                     elif sSelect == 6:
-                        break
+                        print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
+                        exit()
                     else:
                         print("Invalid Input! Please enter a number between 1 - 6")
-                
-            elif choice == "E" or choice == "e":
+
+            elif choice == "E" or choice == "e" :
+
                 print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice dayyyy!")
                 break
             else:
                 print("Invalid Input! Please enter A, B or E!")
+                break
 
         except ValueError:
             print("Value Inputted is not a number!")
@@ -138,5 +143,7 @@ while (cond != "E" and cond != "e"):
         rental()
     elif ch == "E" or ch == "e":
         print("\nThank You Very Much!")
+        break
     else:
         print("\nInvalid Input")
+        break
