@@ -13,13 +13,13 @@ Features Include:
 
 
 
-**	Management:**
+	Management:
 
 •	Manage Customer
 •	Rental 
 •	Exit
 
-**Operations:**
+	Operations:
 
 •	Create an Account
 
@@ -27,7 +27,7 @@ Features Include:
 
 •	Exit
 
-**Gown Menu / Suit Menu**
+	Gown Menu / Suit Menu
 
 •	Display all The Available Gowns/Suits
 
@@ -41,9 +41,9 @@ Features Include:
 
 •	Exit
 
-**Features Description**:
+	Features Description:
 
-	Management:
+Management:
 	
 •	Manage Customer
 
