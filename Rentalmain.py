@@ -6,7 +6,6 @@ customer = Customer()
 
 def welcome():
     print("||||| Welcome to JRRK Wardrove Rental Shop System |||||")
-    start = input("\nPress any key to continue...")
 
 def menu():
     print("\n-- MANAGEMENT --")
@@ -34,11 +33,10 @@ def customerManage():
 
 def rental():
     while True:
-        print("""\n
-                        A. Gown Menu
-                        B. Suit Menu
-                        E. Exit
-        """)
+        print("\n-- RENTAL MENU --")
+        print("A. Gown Menu")
+        print("B. Suit Menu")
+        print("E. Exit")
 
         choice = input("Choose Yours :) : ")
 
@@ -70,11 +68,10 @@ def rental():
                     customer.rentalBasisG, customer.rentalTimeG, customer.gowns = 0, 0, 0
                     print("------------------------------------")
                 elif gSelect == 5:
-                    print("||||| Welcome to JRRK Wardrove Rental Shop System |||||")
+                    welcome()
                 elif gSelect == 6:
                     print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
-
-                    break
+                    exit()
 
                 else:
                      print("Invalid Input! Please enter a number between 1 - 6")
@@ -107,8 +104,7 @@ def rental():
                         customer.rentalBasisS, customer.rentalTimeS, customer.suits = 0, 0, 0
                         print("------------------------------------")
                     elif sSelect == 5:
-                        print("||||| Welcome to JRRK Wardrove Rental Shop System |||||")
-                        exit()
+                        welcome()
                     elif sSelect == 6:
                         print("Thank you for trusting JRRK Wardrove Rental Shop! Have a nice day!")
                         exit()
@@ -130,20 +126,21 @@ def rental():
 
 # START PROGRAM
 welcome()
+start = input("\nPress any key to continue...")
+while True:
+    
+    menu()
+    ch = input("Enter your choice: ")
 
-menu()
-
-ch = input("Enter your choice: ")
-
-cond = ""
-while (cond != "E" and cond != "e"):
-    if ch == "A" or ch == "a": 
-        customerManage()
-    elif ch == "B" or ch == "b":
-        rental()
-    elif ch == "E" or ch == "e":
-        print("\nThank You Very Much!")
-        break
-    else:
-        print("\nInvalid Input")
-        break
+    cond = ""
+    while (cond != "E" and cond != "e"):
+        if ch == "A" or ch == "a": 
+            customerManage()
+        elif ch == "B" or ch == "b":
+            rental()
+        elif ch == "E" or ch == "e":
+            print("\nThank You Very Much!")
+            exit()
+        else:
+            print("\nInvalid Input")
+            break
