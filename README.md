@@ -1,9 +1,9 @@
-#Final Requirements in Advance Computer Programming. Groupings of 4 Contributors.
-Members:
-•	Jhon Denver A. Regencia
-•	Rhenan A. Rosales
-•	Kyle Howard P. Concevido
-•	Franklyn Eronz Ramos
+# Final Requirements in Advance Computer Programming.
+> Members:
+ - Jhon Denver A. Regencia
+ - Rhenan A. Rosales
+ - Kyle Howard P. Concevido
+ - Franklyn Eronz Ramos
 
 
 **Gown and Suit Rental System**
