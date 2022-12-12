@@ -78,7 +78,7 @@ Originality |  | :heavy_check_mark: |  |
 Overall Impression | :heavy_check_mark: |  |  |
 
 # UML (Unified Modeling Language)
-...
+![Gown and Suit Rental System UML Diagram drawio](https://user-images.githubusercontent.com/113603321/206975961-9622c113-1575-4426-972f-22bbaffaa006.png)
 
 # Video Presentation
 ...
