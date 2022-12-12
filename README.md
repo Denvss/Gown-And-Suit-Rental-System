@@ -36,35 +36,35 @@ Rental shop Name. It encompasses the key elements of the rental system and can c
  
 # Features Information:
 > Management
-**Manage Customer**
+- Manage Customer
  - This operation will redirect the user to the Operations menu.
-**Rental**
+- Rental
  - This operation will redirect the user to the Rental page Consisting of Rental of Gown(s) and Suit(s)
-**Exit**
+- Exit
  - This operation will process the termination of the program.
 
 > Customer
-**Create an Account For Customer**
+- Create an Account For Customer
  - This step involves setting up a customer account.
-**Delete a Customer Account**
+- Delete a Customer Account
  - This operation will process the deletion of an customer account.
-**Exit**
+- Exit
  - This operation will proceed to the termination of the program.
   
 
 > Gown Menu / Suit Menu
-**Display all The Available Gowns/Suits**
+- Display all The Available Gowns/Suits
  - This operation will display all the available outfits information.
-**Rent a Gown/Suit for a Day**
+- Rent a Gown/Suit for a Day
  - This operation will process the Renting of the customer for a “DAY” where they will fill up necessary information (such as Count of outfit to rent).
-**Rent a Gown/Suit for a Week**
+- Rent a Gown/Suit for a Week
  - This operation will process the Renting of the customer for a “WEEK” where they will fill up necessary information (Renting for a WEEK also include a 
 “Discount”.)
-**Return a Gown /Suit**
+- Return a Gown /Suit
  - This operation will process the returning of the rented outfit, will also process the payment of the outfit rented.
-**Main Menu**
+- Main Menu
  - This operation will redirect the customer to the Main Menu tab.
-**Exit**
+- Exit
  - This operation will process the terminations of the program.
   
 
