@@ -1,5 +1,6 @@
 import datetime
 
+# Main Class
 class OutfitRent:
     
     def __init__(self, stock):
