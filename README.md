@@ -67,7 +67,7 @@ Rental shop Name. It encompasses the key elements of the rental system and can c
 - Exit
   - This operation will process the terminations of the program.
   
-# Self-assessment:
+# Self-Assessment:
 Metric | 4 | 3 | 2 | 1
 | :---: | :---: | :---: | :---: | :---:
 Code Reusability |  | :heavy_check_mark: |  | 
