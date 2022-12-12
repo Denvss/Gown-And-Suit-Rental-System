@@ -81,7 +81,7 @@ Overall Impression | :heavy_check_mark: |  |  |
 ![Gown and Suit Rental System UML Diagram drawio](https://user-images.githubusercontent.com/113603321/206975961-9622c113-1575-4426-972f-22bbaffaa006.png)
 
 # Video Presentation
-...
+https://www.youtube.com/watch?v=9Awewjzwof8
 
 
 
