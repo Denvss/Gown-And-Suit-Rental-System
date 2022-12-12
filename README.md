@@ -67,6 +67,22 @@ Rental shop Name. It encompasses the key elements of the rental system and can c
 - Exit
   - This operation will process the terminations of the program.
   
+# Self-assessment:
+Metric | 4 | 3 | 2 | 1
+| :---: | :---: | :---: | :---: | :---:
+Code Reusability |  | :heavy_check_mark: |  | 
+Maintainability |  | :heavy_check_mark: |  | 
+Scalability |  | :heavy_check_mark: |  | 
+Execution |  | :heavy_check_mark: |  | 
+Originality |  | :heavy_check_mark: |  | 
+Overall Impression | :heavy_check_mark: |  |  |
+
+# UML (Unified Modeling Language)
+...
+
+# Video Presentation
+...
+
 
 
 
